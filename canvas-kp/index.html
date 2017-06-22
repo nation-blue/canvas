@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+
+	<script type="text/javascript" src="js/hitPix.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	<script src="js/imgload.js"></script>
+	<body>
+		<!--开始界面-->
+		<div class="hxt">
+			<div class="word"></div>
+			<a href="#" class="go"></a>
+			<div class="actives">
+				<a href="#" class="activelist store">
+					<img src="img/back/store.png" alt="" />
+				</a>
+				<a href="#" class="activelist set">
+					<img src="img/back/set.png" alt="" />
+				</a>
+				<a href="#" class="activelist about">
+					<img src="img/back/about.png" alt="" />
+				</a>
+			</div>
+		</div>
+		
+		<div id="store">
+			<div class="img1">
+				白天
+				<img class="a" src="img/back/back.jpg" alt="" />
+			</div>
+			<div class="img2">
+				夜晚
+				<img src="img/back/back1.jpg"/>
+			</div>
+			<span>选择完毕</span>
+		</div>
+		
+		<div id="set">
+			<div class="box">
+				<div id="easy" class="on">
+					简单
+				</div>
+				<div id="medium">
+					中等
+				</div>
+				<div id="difficult">
+					困难
+				</div>
+			</div>
+			<span>选择完毕</span>
+		</div>
+		
+		<div id="about">
+			这是一款跑酷游戏，道具商店可以变化场景，游戏设置可以更改难度，整个游戏界面美观，操作简单，只需要一个空格键即可
+			<span>选择完毕</span>
+		</div>
+		
+		<!--游戏界面-->
+		<div class="gameStart">
+			<div class="score">
+				<div class="distance">分数:<span></span></div>
+				<div class="life">生命:<span></span></div>
+				<div class="setopts">
+					<a href="index.html" class="setopt setopt1"></a>
+					<a href="javascript:;" class="setopt setopt2"></a>
+					<a href="javascript:;" class="setopt setopt3"></a>
+				</div>
+			</div>
+			<img src="img/run/run1.png" alt="" class="run" hidden/>
+			<img src="img/run/run2.png" alt="" class="run" hidden/>
+			<img src="img/run/run3.png" alt="" class="run" hidden/>
+			<img src="img/run/run4.png" alt="" class="run" hidden/>
+			<img src="img/run/run5.png" alt="" class="run" hidden/>
+			<img src="img/run/run6.png" alt="" class="run" hidden/>
+			<img src="img/run/run7.png" alt="" class="run" hidden/>
+			<img src="img/run/run8.png" alt="" class="run" hidden/>
+			<img src="img/run/jump.png" alt="" class="jump" hidden/>
+			<img src="img/hinder/hinder1.png" alt="" class="hinder" hidden/>
+			<img src="img/hinder/hinder2.png" alt="" class="hinder" hidden/>
+			<img src="img/hinder/hinder3.png" alt="" class="hinder" hidden/>
+			<img src="img/hinder/hinder4.png" alt="" class="hinder" hidden/>
+			<img src="img/hinder/hinder5.png" alt="" class="hinder" hidden/>
+			<img src="img/hinder/hinder6.png" alt="" class="hinder" hidden/>
+			<img src="img/hinder/hinder7.png" alt="" class="hinder" hidden/>	
+			<canvas></canvas>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" src="js/index.js"></script>

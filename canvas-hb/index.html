@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="shape.js"></script>
+</head>
+<body>
+    <div class="canvas">
+       <div class="menu">
+           <a href="#" class="first">文件</a>
+           <a href="#">画图</a>
+           <a href="#">类型</a>
+           <a href="#">颜色</a>
+           <a href="#">线条</a>
+           <a href="#" class="xpOpt">橡皮</a>
+           <a href="#" class="text">文字</a>
+       </div>
+       <div class="main">
+           <div class="left">
+               <ul class="opt first">
+                   <li class="new">新建</li>
+                   <li class="back">返回</li>
+                   <li class="save">保存</li>
+                   <li class="reset">重置</li>
+               </ul>
+               <ul class="opt draw">
+                    <li data-role="line">画线</li>
+                    <li data-role="rect">矩形</li>
+                    <li data-role="arc">圆</li>
+                    <li data-role="bian">多边形</li>
+                    <li data-role="jiao">多角形</li>
+                    <li data-role="pen">钢笔</li>
+                </ul>
+                <ul class="opt style">
+                    <li data-role="stroke">线条</li>
+                    <li data-role="fill">填充</li>
+                </ul>
+                <ul class="opt color">
+                    <li>线条颜色<input type="color" name="color" data-role="strokeStyle"/></li>
+                    <li>填充颜色<input type="color" name="color" data-role="fillStyle"/></li>
+                </ul>
+                <ul class="opt lineW">
+                    <li data-role="1">细</li>
+                    <li data-role="5">中</li>
+                    <li data-role="10">粗</li>
+                    <input type="number" placeholder="请输入宽度"/>
+                </ul>
+                <ul class="opt">
+                    <input type="number" value="10" placeholder="请输入大小"/>
+                </ul>
+                <ul class="opt"></ul>
+           </div>
+           <div class="right">
+               <div class="xp"></div>
+                <div class="copy"></div>
+                <canvas width="750" height="470">
+                    您的浏览器不支持canvas
+                </canvas>
+                <!--contenteditable 内容可编辑的-->
+                <div contenteditable="true" class="word"></div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
+
+<script src="index.js"></script>
